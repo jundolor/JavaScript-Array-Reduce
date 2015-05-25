@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Array Methods</title>
+	<script>
+	var numbers = [5, 2, 15, 7, 9, 3, 8, 25, 3, 10, 11];
+	var divisor = numbers[0];
+	var searchVal = numbers.reduce(function(start, current){
+		if(!(current % divisor))
+			if(current > start) return current;
+			else return start;
+		else return start;
+	});
+	console.log(searchVal);
+	</script>
+  </head>
+  <body>
+    <h1>Array Reduce Method</h1>
+  </body>
+</html>
